@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova — Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">◆ Nova</a>
+      <nav class="links">
+        <a href="#funzioni">Funzioni</a>
+        <a href="#prezzi">Prezzi</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#contatti" class="btn btn-small">Inizia ora</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="badge">Nuovo · Versione 2.0</span>
+        <h1>Lavora meglio,<br><span class="accent">senza complicazioni.</span></h1>
+        <p class="lead">Nova è lo strumento semplice per organizzare progetti, team e scadenze in un unico posto.</p>
+        <div class="cta">
+          <a href="#contatti" class="btn">Prova gratis</a>
+          <a href="#funzioni" class="btn btn-ghost">Scopri di più</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="funzioni" class="section">
+      <div class="container">
+        <h2>Tutto ciò che ti serve</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Veloce</h3>
+            <p>Interfaccia leggera che risponde all'istante, anche su mobile.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🔒</div>
+            <h3>Sicuro</h3>
+            <p>I tuoi dati sono protetti e salvati automaticamente.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🤝</div>
+            <h3>Collaborativo</h3>
+            <p>Invita il tuo team e lavorate insieme in tempo reale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prezzi" class="section alt">
+      <div class="container">
+        <h2>Prezzi semplici</h2>
+        <div class="grid">
+          <div class="card price">
+            <h3>Base</h3>
+            <p class="amount">0€<span>/mese</span></p>
+            <ul><li>1 progetto</li><li>2 utenti</li><li>Supporto email</li></ul>
+            <a href="#contatti" class="btn btn-ghost">Scegli</a>
+          </div>
+          <div class="card price featured">
+            <h3>Pro</h3>
+            <p class="amount">12€<span>/mese</span></p>
+            <ul><li>Progetti illimitati</li><li>10 utenti</li><li>Supporto prioritario</li></ul>
+            <a href="#contatti" class="btn">Scegli</a>
+          </div>
+          <div class="card price">
+            <h3>Team</h3>
+            <p class="amount">29€<span>/mese</span></p>
+            <ul><li>Tutto di Pro</li><li>Utenti illimitati</li><li>Statistiche avanzate</li></ul>
+            <a href="#contatti" class="btn btn-ghost">Scegli</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container narrow">
+        <h2>Domande frequenti</h2>
+        <details><summary>Posso annullare quando voglio?</summary><p>Sì, nessun vincolo: puoi disdire in qualsiasi momento.</p></details>
+        <details><summary>Serve una carta di credito per la prova?</summary><p>No, il piano Base è gratuito e non richiede pagamenti.</p></details>
+        <details><summary>Funziona su smartphone?</summary><p>Certo, Nova è ottimizzato per tutti i dispositivi.</p></details>
+      </div>
+    </section>
+
+    <section id="contatti" class="section alt">
+      <div class="container narrow center">
+        <h2>Resta aggiornato</h2>
+        <p class="lead">Lascia la tua email per ricevere novità e accesso anticipato.</p>
+        <form class="form" id="form">
+          <input type="email" placeholder="La tua email" required>
+          <button class="btn" type="submit">Iscriviti</button>
+        </form>
+        <p class="msg" id="msg"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Nova · Pagina di prova</div>
+  </footer>
+
+  <script>
+    document.getElementById('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('msg').textContent = 'Grazie! Ti abbiamo iscritto 🎉';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
